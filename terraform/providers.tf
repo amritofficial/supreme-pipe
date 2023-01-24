@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("../config/cred/terraform-cicd-375615.json")
-  project = "terraform-cicd-375615"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  credentials = file("${var.credentials}")
+  project = "${var.project_id}"
+  region  = "${var.region}"
+  zone    = "${var.zone}"
 }
