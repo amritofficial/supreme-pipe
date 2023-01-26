@@ -9,3 +9,7 @@ variable "project_id" {
 variable "region" {
     type = string
 }
+
+variable "storage_class" {
+    type = string
+}
